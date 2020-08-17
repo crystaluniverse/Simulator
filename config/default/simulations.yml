@@ -1,0 +1,21 @@
+#simulations are the different variations we create for doing the variations
+# correspond to keys in cloudunit_prices.yml
+cloudunits_prices:
+    - 'low'
+    - 'mid'
+    - 'biz'
+#the node_default is the node which get used to grow
+# corresponds to keys in nodes_growth.yml
+# env used = environment_default (the default node with the cost arguments)
+growth:
+    - '50000'
+    - '200000'
+    - '1000000'
+#the list of token prices
+#when ':' inside then we use interpolation
+#the key used e.g, slow1 is the key of the tokenprice to simulate
+token_prices:
+    - '0.15'
+    - '3.0'
+farming_simulations:
+    - 'amd_simulation1'

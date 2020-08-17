@@ -1,0 +1,38 @@
+#environments are not used when simulating: TFT price, grid value, grid growth
+#environments only used to calculate the return of 1 specific farming configuration
+#name of the environment:
+environments:
+    amd_simulation1:
+        #nodes as used in the environment, the value is the amount of node sin the env
+        description: ''
+        nodes:
+            amd_starter:
+                nr: 20
+                <<: *amd_starter
+        overhead:
+            switch:
+                nr: 2
+                <<: *switch
+        #the costs per environment, optional
+        cost_env:
+            #cost per kwatt/hour in USD
+            cost_power_kwh: 0.15
+            #is the cost of 1U rackspace per month in USD
+            cost_rack_unit: 12
+            #cost per mbit/sec in the used datacenter (USD), bulk prices can be good like '1USD'
+            cost_mbitsec_month: 2
+            #cost per month in relation to writeoff e.g. if monthly writeoff is 200, and here 10, then 20 eur is the cost of maintenance
+            cost_maintenance_percent_of_hw: 10
+            #how fast do we write off hardware
+            months_writeoff: 60
+
+        simulation:
+            #months to simulate, can do 1 or more months
+            #if not specified then will be month 1
+            startmonths: "1,5"
+            #is default but if on false, will not do this simulation
+            active: true
+
+        network:
+            nu_multiplier_from_cu: 10
+            nu_multiplier_from_su: 40

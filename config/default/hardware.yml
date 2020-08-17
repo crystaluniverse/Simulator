@@ -1,0 +1,156 @@
+chassis: &chassis
+    cost: 300.0
+    description: Chassis for Ryzen CPU (no cpu inside), 4 HD slots, 1 SSD slots, 10 gbit nic
+    cu_perc: 0
+    su_perc: 0          
+    cru: 0.0
+    mru: 0.0
+    hru: 0.0
+    sru: 0.0
+    link: ''
+    passmark: 0
+    power: 30
+    rackspace_u: 2.0
+hd8: &hd8
+    cost: 200.0
+    description: Seagate Baracuda 8TB (6-8 watt)
+    cu_perc: 0
+    su_perc: 100          
+    cru: 0.0
+    mru: 0.0
+    hru: 8000.0
+    sru: 0.0
+    link: ''          
+    passmark: 0
+    power: 10
+    rackspace_u: 0.0
+hd12: &hd12
+    cost: 330.0
+    description: Seagate Baracuda 12TB (6-8 watt)
+    cu_perc: 0
+    su_perc: 100         
+    cru: 0.0
+    mru: 0.0
+    hru: 12000.0
+    sru: 0.0
+    link: ''          
+    passmark: 0
+    power: 10
+    rackspace_u: 0.0  
+amd1: &amd1
+    cost: 240.0
+    description: AMD Ryzen 3 3600X (12 logical cores)
+    cu_perc: 100
+    su_perc: 0          
+    cru: 12.0
+    mru: 0.0
+    hru: 0.0
+    sru: 0.0
+    link: ''          
+    passmark: 18000
+    power: 80
+    rackspace_u: 0.0
+amd2: &amd2
+    cost: 377.0
+    description: AMD Ryzen 7 3800X (16 logical cores)
+    cu_perc: 100
+    su_perc: 0          
+    cru: 16.0
+    mru: 0.0
+    hru: 0.0
+    sru: 0.0
+    link: ''          
+    passmark: 24500
+    power: 105
+    rackspace_u: 0.0     
+ssd05: &ssd05
+    cost: 120.0
+    description: 0.5 TB SSD
+    cu_perc: 0
+    su_perc: 100          
+    cru: 0.0
+    mru: 0.0
+    hru: 0.0
+    sru: 500.0
+    link: ''          
+    passmark: 0
+    power: 5
+    rackspace_u: 0.0
+ssd1: &ssd1
+    cost: 240.0
+    description: 1 TB SSD
+    cu_perc: 0
+    su_perc: 100          
+    cru: 0.0
+    mru: 0.0
+    hru: 0.0
+    sru: 1000.0
+    link: ''          
+    passmark: 0
+    power: 5
+    rackspace_u: 0.0
+mem16: &mem16
+    cost: 140.0
+    description: mem 16GB
+    cu_perc: 100
+    su_perc: 0          
+    cru: 0.0
+    mru: 16.0
+    hru: 0.0
+    sru: 0.0
+    link: ''          
+    passmark: 0
+    power: 8
+    rackspace_u: 0.0
+mem32: &mem32
+    cost: 220.0
+    description: mem 32GB
+    cu_perc: 100
+    su_perc: 0          
+    cru: 0.0
+    mru: 32.0
+    hru: 0.0
+    sru: 0.0
+    link: ''          
+    passmark: 0
+    power: 8
+    rackspace_u: 0.0 
+switch10: &switch10
+    cost: 1000.0
+    description: '12 ports 10 gbit + cables'
+    cu_perc: 0
+    su_perc: 0          
+    cru: 0.0
+    mru: 0.0
+    hru: 0.0
+    sru: 0.0
+    link: ''          
+    passmark: 0
+    power: 100
+    rackspace_u: 1.0
+switch1: &switch1
+    cost: 300.0
+    description: '8 ports gbit + cables'
+    cu_perc: 0
+    su_perc: 0          
+    cru: 0.0
+    mru: 0.0
+    hru: 0.0
+    sru: 0.0
+    link: ''          
+    passmark: 0
+    power: 100
+    rackspace_u: 1.0       
+margin1: &margin1
+    cost: 400.0
+    description: Margin per node for threefold and its partners
+    cu_perc: 0
+    su_perc: 0          
+    cru: 0.0
+    mru: 0.0
+    hru: 0.0
+    sru: 0.0
+    link: ''          
+    passmark: 0
+    power: 0
+    rackspace_u: 0.0

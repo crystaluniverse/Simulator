@@ -1,0 +1,49 @@
+# devices as can be used in environmenst
+# the key e.g. amd_starter is the name
+# then list of components (key is the name, the value is the nr of times this component is used)
+amd_starter: &amd_starter
+    hardware:
+        chassis:
+            nr: 1
+            <<: *chassis
+        amd1:
+            nr: 1
+            <<: *amd1
+        hd8:
+            nr: 1
+            <<: *hd8
+        mem32:
+            nr: 1
+            <<: *mem32
+        ssd05:
+            nr: 1
+            <<: *ssd05
+        margin1:
+            nr: 1
+            <<: *margin1
+amd_big:
+    hardware:                     
+        chassis:
+            nr: 1
+            <<: *chassis
+        amd2:
+            nr: 1
+            <<: *amd2
+        hd12:
+            nr: 1
+            <<: *hd12
+        mem32:
+            nr: 2
+            <<: *mem32
+        ssd1:
+            nr: 1
+            <<: *ssd1
+        margin1:
+            nr: 1
+            <<: *margin1
+
+switch: &switch
+    hardware:
+        switch1:
+            nr: 1
+            <<: *switch1
